@@ -3,6 +3,9 @@ const inputElement = document.getElementById("input-el");
 const inputBtn = document.getElementById("input-btn");
 let ulEl = document.getElementById("ul-l");
 const deleteBtn = document.getElementById("input-btn1");
+const tabBtn = document.getElementById("input-btn0");
+
+// const tabs = [{ url: "www.github.com/thrila" }];
 
 const renderLeads = (leads) => {
   let listItems = "";
@@ -37,4 +40,15 @@ deleteBtn.addEventListener("dblclick", (event) => {
   localStorage.clear(leadsFromLocalStorage);
   myLeads = [];
   renderLeads(myLeads);
+});
+
+tabBtn.addEventListener("click", (event) => {
+  // chrome.tabs.query({currentWindow: true, active: true}, function(tabs){
+
+  // });
+  chrome.tabs.query({ active: true, currentWindow: true}, function (tabs) {
+    myLeads.push(tabs[0].url);
+    localStorage.setItem("myLeads", JSON.stringify(myLeads));
+    renderLeads(myLeads);
+  });
 });

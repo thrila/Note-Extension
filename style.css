@@ -5,7 +5,7 @@ body{
     width: 350px;
 }
 #head{
-    color: green;
+    color: black;
     font-weight: 700;
     font-size: large;
     text-align: center;
@@ -14,31 +14,31 @@ input{
 padding: 10px 10px 10px 10px;
 width: 100%;
 box-sizing: border-box;
-border: 1px solid green;
+border: 1px solid black;
 }
 
 #input-btn {
-    background-color: green;
+    background-color: black;
     color: white;
     padding: 10px 20px 10px 20px;
     margin-top: 10px;
-    border: 1px solid green;
+    border: 1px solid black;
     
     }
     #input-btn0 {
-        background-color: green;
+        background-color: black;
         color: white;
         padding: 10px 20px 10px 20px;
         margin-top: 10px;
-        border: 1px solid green;
+        border: 1px solid black;
         
         }
     #input-btn1 {
         background-color: white;
-        color: green;
+        color: black;
         padding: 10px 20px 10px 20px;
         margin-top: 10px;
-        border: 1px solid green;
+        border: 1px solid black;
         
         }
 
@@ -52,7 +52,7 @@ li{
     margin-top: 5px;
 }
 a {
-    color: green;
+    color: black;
 }
 #end{
     font-size: 10px;
